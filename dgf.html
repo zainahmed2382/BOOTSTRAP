@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <input type="text" name="" id=  "userText" placeholder="Enter Friuts">
+    <ul id="mylist"></ul>
+
+    <button id="btnappend">Append</button>
+<button id="btnprepend">Prepend</button>
+
+<script>
+    $(document).ready(function () {
+      
+        $("btnappend").click(function () {
+   $("#mylist").append("<li> Apple </li>");
+})
+
+
+
+$("btnprepend").click(function () {
+   $("#mylist").prepend(<li> + </li>);
+})
+
+$("#btnappend").click(function() {
+    var userinput = $("#userText").val();
+    $("#myList").append("<li>" + userinput + "</li>")
+})
+
+$("#btnprepend").click(function () {
+    var userinput =$("#userText").val();
+    $("#myList").prepend("<li>" + userinput + "</li>")
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    })
+</script>
+</body>
+</html>

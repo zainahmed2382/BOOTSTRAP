@@ -14,9 +14,12 @@
         <button id="slideup">Slide-Up</button>
         <button id="slidedown">Slide-Down</button>
         <button id="slidetoggle">Slide-Toggle</button>
+      
     </div>
 <script>
+    
     $(document).ready(function(){
+
     $("div").css({ 
         "border" : "2px groove red",
         "background-color" :"lightblue",
@@ -92,6 +95,12 @@ $("body").keypress(function () {
     })
 })
 
+$("body").contextmenu(function () {
+    $("body").css({
+        "background-color" : "black" ,
+        "color" : "grey"
+    })
+})
     });
 
   
