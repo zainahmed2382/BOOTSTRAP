@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div>
+        <h1>J-QUERY</h1>
+    </div>
+
+    <button id="btnhide">Hide</button>
+    <button id="btnshow">show</button>
+    <button id="btntoggle">Toggle</button>
+    <button id="btnslideup">slide-up</button>
+    <button id="btnslidedown">slide-down</button>
+    <button id="btnslidetoggle">slide-Toggle</button>
+    <button id="btnfadein">fade-in</button>
+    <button id="btnfadeout">fade-out</button>
+    <button id="btnfadetoggle">fade-Toggle</button>
+    <button id="btnfadeto">fade-To</button>
+    <script>
+        $(document).ready(function() {
+            $("div").css({
+         "border": "2px solid red",
+         "background-color": "yellow",
+        "padding":"20px",
+        "text-align":"center"
+        })
+           
+$("#btnhide").click(function() {
+    $("div").hide(3000)
+})
+
+$("#btnshow").click(function() {
+    $("div").show(3000)
+
+})
+
+$("#btntoggle").click(function() {
+    $("div").toggle(3000)
+
+})
+
+$("#btnslideup").click(function() {
+    $("div").slideUp(3000)
+
+})
+
+$("#btnslidedown").click(function() {
+    $("div").slideDown(3000)
+
+})
+
+$("#btnslidetoggle").click(function() {
+    $("div").slideToggle(3000)
+
+})
+
+$("#btnfadein").click(function() {
+    $("div").fadeIn(3000)
+
+})
+
+$("#btnfadeout").click(function() {
+    $("div").fadeOut(3000)
+
+})
+
+$("#btnfadetoggle").click(function() {
+    $("div").fadeToggle(3000)
+
+})
+
+
+$("#btnfadeto").click(function() {
+    $("div").fadeTo(3000 , 0.5)
+
+})
+
+$("body").keypress(function () {
+    $("body").css({
+        "background-color" : "aqua"
+    })
+})
+
+$("body").keyup(function () {
+    $("body").css({
+        "background-color" : "purple"
+    })
+})
+
+$("body").keydown(function () {
+    $("body").css({
+        "background-color" : "pink"
+    })
+})
+
+$("body").mousedown(function () {
+    $("body").css({
+        "background-color" : "red"
+    })
+})
+
+$("body").mouseenter(function () {
+    $("body").css({
+        "background-color" : "green"
+    })
+})
+
+$("body").mouseover(function () {
+    $("body").css({
+        "background-color" : "orange"
+    })
+})
+
+$("body").contextmenu(function () {
+    $("body").css({
+        "background-color" : "black" ,
+        "color" : "grey"
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+    </script>
+    
+</body>
+</html>
