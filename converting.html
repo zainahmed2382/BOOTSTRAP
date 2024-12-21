@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div id="resultDiv"></div>
+    <script>
+        // $(document).ready(function () {
+        //     var employee = [
+        //         { 
+        //         "firstname" : "John",
+        //         "lastname" : "Deo" ,
+        //         "age" : 30 ,
+        //         "salary" : 50000
+ 
+        //         },
+        //         {
+        //             "firstname" : "John",
+        //         "lastname" : "Deo" ,
+        //         "age" : 21 ,
+        //         "salary" : 40000
+        //         }
+
+        //     ];
+        //      var JOSONstring = JSON.stringify(employee);
+        //      $("#resultDiv").html(JOSONstring)
+        // })
+
+
+        $(document).ready(function () {
+            var JSONString :  '[{"firstname":"John","lastname":"Deo","age":30,"salary":50000},{"firstname":"John","lastname":"Deo","age":21,"salary":40000}]'
+      var employee = JSON.parse(JSONString);
+      var result = "";
+      $.each(employee, function(i, item) {
+        result += "First Name :" + " " + item.firstname, "<br>"
+        result +=  "Last Name :" + " " + item.last,  "<br>"
+        result += "Age :" + " " + item.age, "<br>"
+        result +=  "Salary :" + " " + item.salary, "<br>"
+
+
+      });
+      $("#resultDiv").html(result);
+
+
+
+
+
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+    </script>
 </body>
 </html>
